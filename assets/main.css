@@ -1,0 +1,106 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  @custom-media --breakpoint-large screen and (min-width: 64em);
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+
+  33.33% {
+    opacity: 1;
+  }
+
+  66.66% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes black-and-white {
+  0% {
+    color: var(--color-black);
+  }
+
+  33.33% {
+    color: var(--color-white);
+  }
+
+  66.66% {
+    color: var(--color-white);
+  }
+
+  100% {
+    color: var(--color-black);
+  }  
+}
+
+.intro__bg,
+.intro__text {
+  transition:         all .25s ease;
+  -webkit-transition: all .25s ease;  
+  -moz-transition:    all .25s ease;
+  -ms-transition:     all .25s ease; 
+  -o-transition:      all .25s ease;
+}
+
+.intro__bg {
+  background-position: center;
+  opacity: 0;
+}
+
+.intro:hover .intro__text {
+  color: var(--color-white);
+}
+
+.intro:hover .intro__bg {
+  opacity: 1;
+}
+
+.intro__bg--1 {
+  background-image: url('giphy-daftpunk.gif');
+}
+
+.intro__bg--2 {
+  background-image: url('giphy-drake.gif');
+}
+
+.intro__bg--3 {
+  background-image: url('giphy-explore.gif');
+}
+
+.intro__bg--4 {
+  background-image: url('giphy-spiritedaway.gif');
+}
+
+.link-underline {
+  border-bottom: 2px solid var(--color-black);
+  text-decoration: none;
+  transition:         all .2s ease;
+  -webkit-transition: all .2s ease;  
+  -moz-transition:    all .2s ease;
+  -ms-transition:     all .2s ease; 
+  -o-transition:      all .2s ease;
+}
+
+.link-underline:hover {
+  padding-bottom: 4px;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
